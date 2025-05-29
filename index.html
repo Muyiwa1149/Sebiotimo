@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Sebiotimo Medical and Diagnostics Center | Healthcare in Ondo</title>
+  <meta name="description" content="Sebiotimo Medical and Diagnostics Center in Ondo offers high-quality diagnostic, medical consultation, lab tests, cardiology, and imaging services. Book your appointment today.">
+  <meta name="keywords" content="Sebiotimo, Medical Center Ondo, Diagnostics, Healthcare, Lab Test, Cardiology, Ultrasound, Doctor Ondo, Hospital Ondo, Make Appointment">
+  <meta name="author" content="Sebiotimo Medical and Diagnostics Center">
+
+  <!-- Open Graph for Social Media -->
+  <meta property="og:title" content="Sebiotimo Medical and Diagnostics Center" />
+  <meta property="og:description" content="High-quality diagnostic and medical services in Ondo. Book appointments, access lab tests, and more." />
+  <meta property="og:image" content="image/logo.png" />
+  <meta property="og:url" content="https://test.achillesdrill.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="image/logo.png" type="image/png" />
+
+  <!-- CSS and Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-jQGwYdfKqsl7qP4NHCPpQJQ4ZKwzGlOUZg8/9ZPZExNLPl8RJgaVChWnYg0obN9Kv7tbLdUbcOPUMQZl7nCqFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .inner-services {
+  perspective: 1000px;
+  width: 300px; /* adjust width */
+  height: 250px; /* adjust height */
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.inner-services:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.flip-box-front {
+  background: white;
+  color: #152265;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.flip-box-back {
+  background: #cce4ff;
+  color: #152265;
+  transform: rotateX(180deg);
+  overflow-y: auto;
+  justify-content: flex-start; /* start text from top */
+  padding-top: 20px;
+  text-align: left;
+}
+ .main-footer {
+    background-color: #152265;
+    padding: 40px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .footer-content {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, min-width */
+    min-width: 200px;
+    max-width: 400px;
+  }
+
+  .footer-content h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  .link {
+    list-style: none;
+    padding: 0;
+  }
+
+  .link li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: white;
+    word-wrap: break-word;
+  }
+
+  .link a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .link a:hover {
+    text-decoration: none;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+  }
+
+  .social i {
+    margin-right: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .link li {
+   
+    font-size: 12px;
+
+  }
+
+    .footer-content {
+      width: 100%;
+    }
+  }
+/* Floating Button */
+#whatsapp-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+#whatsapp-fab:hover {
+    transform: scale(1.1);
+}
+
+/* Chat UI */
+#whatsapp-chatbar {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+    z-index: 9998;
+    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+}
+
+/* Show Chat */
+#whatsapp-chatbar.active {
+    transform: scaleY(1);
+}
+
+/* Header */
+#whatsapp-chatbar-header {
+    background-color: #25D366;
+    color: white;
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#whatsapp-close {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Body */
+#whatsapp-chatbar-body {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input */
+#whatsapp-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Send button */
+#whatsapp-send {
+    background-color: #25D366;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo"><img src="image/new.png" alt="Sebiotimo Medical Center Logo" /></div>
+    <nav class="navbar">
+      <a href="/">Home</a>
+      <a href="/#about">About</a>
+      <a href="/#services">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="check-appointment.php">Check Appointment</a>
+    </nav>
+    <div class="right-icons">
+      <div id="menu-bars" class="fas fa-bars"></div>
+      <div class="btn butt"><a href="booking.php" style="color: white; text-decoration: none;">Make Appointment</a></div>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <div class="main-home" id="home">
+    <div class="home">
+      <div class="home-left-content">
+        <span style="color: black; text-decoration: none;">Welcome to Sebiotimo</span>
+        <h2>Your Health is Our Priority</h2>
+        <p class="lorem">
+          At Sebiotimo Medical and Diagnostics Center, we provide high-quality diagnostic and medical care with a team of dedicated professionals and state-of-the-art equipment.
+        </p>
+        <div class="home-btn">
+          <a href="check-appointment.php">Confirm Appointment</a>
+          <a class="homebtnsec" href="booking.php">Book Appointment</a>
+        </div>
+      </div>
+      <div class="home-right-content">
+        <img src="image/hero2.png" alt="Hospital Reception and Diagnostic Room" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Technology Highlights -->
+  <div class="technology">
+            <div class="main-technology">
+                
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-tr-hands-heart"></i>
+                    <h2>Compassionate Care</h2>
+                    <p>We combine empathy with expertise to offer exceptional patient-centered services every day.</p>
+                </div>
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-rr-doctor"></i>
+                    <h2>Expert Medical Team</h2>
+                    <p>Our doctors are among the best in the region, trained across various medical specialties.</p>
+                </div>
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-tr-user-md"></i>
+                    <h2>Modern Equipment</h2>
+                    <p>We utilize advanced technology to ensure accurate diagnostics and effective treatments.</p>
+                </div>
+                </div>
+            </div>
+
+  <!-- About Section -->
+  <div class="main-about" id="about">
+    <div class="about-heading">About Us</div>
+    <div class="inner-main-about">
+      <div class="about-inner-content-left">
+        <img src="image/about1.png" alt="About Sebiotimo Medical and Diagnostics Center" />
+      </div>
+      <div class="about-inner-content">
+        <div class="about-right-content">
+          <h2>Quality Healthcare with a Personal Touch</h2>
+          <p>
+            Sebiotimo Medical and Diagnostics Center is a trusted healthcare institution delivering comprehensive medical and diagnostic solutions for all age groups.
+          </p>
+          <p class="aboutsec-content">
+            With a focus on preventive care, chronic disease management, and modern diagnostics, our goal is to keep you and your family healthy. From our experienced physicians to our friendly support staff, everyone here is dedicated to your well-being.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Services -->
+<div class="our-service" id="services">
+  <div class="service-heading">
+    <h2 style="color: #152265;">Our Services</h2>
+  </div>
+  <div class="main-services">
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-user-doctor"></i></div>
+          <h3>General Outpatient Clinic</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Routine consultations and treatment for general medical issues.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+          <h3>Surgical Outpatient Clinic</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Specialized consultations for peri-operative care and surgical procedures.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-user-nurse"></i></div>
+          <h3>Specialist Clinic</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Advanced medical care by experienced specialists across various fields.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-baby"></i></div>
+          <h3>Pediatrics</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Comprehensive medical care for infants, children, and adolescents.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-person-pregnant"></i></div>
+          <h3>Obstetrics and Gynaecology</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Women's health services including prenatal, childbirth, and gynecological care.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-syringe"></i></div>
+          <h3>Immunization Clinic</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Routine immunizations for children and adults to prevent infectious diseases.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h3>Welfare Clinic</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Social welfare consultations and support for vulnerable individuals and families.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-venus-mars"></i></div>
+          <h3>Family Planning</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Comprehensive reproductive health services and contraception advice.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-tooth"></i></div>
+          <h3>Dental Clinic</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Full range of dental care including cleaning, fillings, and extractions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-dumbbell"></i></div>
+          <h3>Physiotherapy Clinic</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Rehabilitation services for injury recovery and physical therapy treatments.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-flask-vial"></i></div>
+          <h3>Diagnostics Unit</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Our diagnostic unit offers a range of radiological and lab investigations for accurate diagnoses.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-x-ray"></i></div>
+          <h3>Radiological Investigations</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>We provide X-ray, Ultrasound, CT Scan, ECG, Echocardiography and more.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+          <h3>Radiological Procedures</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Barium Enema, Hysterosalpingography (HSG), Colonoscopy, Endoscopy, and other advanced imaging procedures.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEW SERVICES -->
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-box-open"></i></div>
+          <h3>Mortuary and Embalming Services</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Professional mortuary care and embalming services with respect and dignity.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-ambulance"></i></div>
+          <h3>Ambulance Services</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Emergency ambulance services available 24/7 for timely medical transportation.</p>
+        </div>
+      </div>
+    </div>
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-cross"></i></div>
+          <h3>Funeral Services</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Compassionate funeral planning and arrangements tailored to honor every life with dignity.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- New Service: Blood Banking Services -->
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-tint"></i></div>
+          <h3>Blood Banking Services</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Reliable blood collection, testing, storage, and distribution to support lifesaving transfusions.</p>
+        </div>
+      </div>
+    </div>
+        
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-notes-medical"></i></div>
+          <h3>Health Information Unit</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Centralized health records management ensuring confidentiality and accessibility of patient data.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-pills"></i></div>
+          <h3>Pharmaceutical Services</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Comprehensive pharmacy services providing essential medications and expert consultations.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="inner-services">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Retailer Partnership: NHIA</h3>
+        </div>
+        <div class="flip-box-back">
+          <p>Partnered retailers under NHIA to facilitate access to health services and products nationwide.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- Customer Review (content unchanged for now) -->
+    <!-- customer review -->
+   
+        <div class="main-review">
+            <section>  
+            <div class="review-heading">
+                <h1>Our Customers Review</h1>
+            </div>
+
+            <div class="main-inner-review">
+
+                <div class="review-inner-content">
+
+                    <div class="review-box">
+                      <img src="image/re1.jpg" alt="Chinedu Okafor">
+                      <h2>Chinedu Okafor</h2>
+                      <div class="review-stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="review-text">
+                          <p>The doctor was very professional and attentive. I got my test results faster than expected and the environment was very clean.</p>
+                      </div>
+                  </div>
+
+                  <div class="review-box">
+                      <img src="image/re2.jpg" alt="Ngozi Eze">
+                      <h2>Dunsin Adesida</h2>
+                      <div class="review-stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="review-text">
+                          <p>As a first-time visitor, I felt so welcomed. The nurses were caring and the doctor took time to explain everything clearly. Highly recommended!</p>
+                      </div>
+                  </div>
+
+                  <div class="review-box">
+                      <img src="image/re3.jpg" alt="Tunde Adebayo">
+                      <h2>Tunde Adebayo</h2>
+                      <div class="review-stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="review-text">
+                          <p>I came in for a routine check-up and was impressed with how thorough the consultation was. The service is top-notch and very affordable.</p>
+                      </div>
+                  </div>
+
+
+                </div>
+
+            </div>
+        </section>
+        </div>
+    
+    <!-- customer review -->
+
+
+    <!-- Footer -->
+<footer class="main-footer">
+  <div class="footer-inner">
+    <div class="footer-content">
+      <h4>Quick Links</h4>
+      <ul class="link">
+        <li><a href="#home">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="booking.php">Make Appointment</a></li>
+        <li><a href="doctor/login.php">Admin Login</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h4>Contact</h4>
+      <ul class="link">
+        <li><a href="mailto:afoo@sebiotimomedicalcenter.com"><i class="fa fa-envelope"></i> afoo@sebiotimomedicalcenter.com</a></li>
+        <li><a href="tel:+2347053231536"><i class="fa fa-phone"></i> +2347053231536</a></li>
+        <li><a href="tel:+2347039514789"><i class="fa fa-phone"></i> +2347039514789</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h4>Address</h4>
+      <ul class="link">
+        <li>Headquarter: 1 Bagbe via Ondo-Ore road, Ondo</li><br>
+        <li>Ayeyemi Branch: 144, New Garage, Ayeyemi Ondo</li>
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h4>Follow Us</h4>
+      <ul class="link social">
+        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Sebiotimo Medical and Diagnostics Center. All rights reserved.</p>
+  </div>
+</footer>
+
+<div id="whatsapp-fab" title="Chat with us">
+    <i class="fab fa-whatsapp"></i>
+</div>
+
+<!-- Chat UI -->
+<div id="whatsapp-chatbar">
+    <div id="whatsapp-chatbar-header">
+        Chat with us
+        <span id="whatsapp-close">&times;</span>
+    </div>
+    <div id="whatsapp-chatbar-body">
+        <input type="text" id="whatsapp-input" placeholder="Type your message..." value="Hello sir, I am a Sebiotimo Medical Center Website user." />
+        <button id="whatsapp-send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+
+<script>
+// Toggle chat bar
+const fab = document.getElementById('whatsapp-fab');
+const chatbar = document.getElementById('whatsapp-chatbar');
+const closeBtn = document.getElementById('whatsapp-close');
+const sendBtn = document.getElementById('whatsapp-send');
+
+fab.addEventListener('click', () => {
+    chatbar.classList.toggle('active');
+});
+
+closeBtn.addEventListener('click', () => {
+    chatbar.classList.remove('active');
+});
+
+// Send to WhatsApp
+sendBtn.addEventListener('click', () => {
+    const message = document.getElementById('whatsapp-input').value.trim();
+    if (message !== "") {
+        const phone = '2347039514789'; // WhatsApp number
+        const encoded = encodeURIComponent(message);
+        const url = `https://wa.me/${phone}?text=${encoded}`;
+        window.open(url, '_blank');
+    }
+});
+</script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* General adjustments */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Widgets: stack vertically on smaller screens */
+@media (max-width: 767px) {
+  .row > .col-md-6,
+  .row > .col-sm-6 {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .widget.stats-widget {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .widget-footer .small-chart {
+    display: none; /* hide sparkline on small screens */
+  }
+
+  .widget .pull-left,
+  .widget .pull-right {
+    float: none !important;
+    text-align: center;
+  }
+
+  .widget .widget-body {
+    padding: 15px 10px;
+  }
+
+  .widget .big-icon {
+    font-size: 30px;
+    opacity: 0.2;
+  }
+}
+
+/* Header and Sidebar: make them collapsible if not already */
+@media (max-width: 767px) {
+  .menubar {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .navbar-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .app-user {
+    display: none;
+  }
+}
